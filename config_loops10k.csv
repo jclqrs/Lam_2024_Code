@@ -1,0 +1,5 @@
+﻿name,map,expected
+asynC,/home/lamj2/scr/mic_yy1_asyn/final_map/Y7_0h_asyn_1456_merged.mcool,/home/lamj2/scr/mic_yy1_asyn/final_map/Y7_0h_asyn_1456_merged_10k_expected-cis.tsv
+asynT,/home/lamj2/scr/mic_yy1_asyn/final_map/Y7_4h_asyn_1456_merged.mcool,/home/lamj2/scr/mic_yy1_asyn/final_map/Y7_4h_asyn_1456_merged_10k_expected-cis.tsv
+mitoC,/home/lamj2/scr/mic_YY1_midg1/final_map/Y7_0h_midg1_rep0to3.mcool,/home/lamj2/scr/mic_YY1_midg1/final_map/Y7_0h_midg1_rep0to3_10k_expected-cis.tsv
+mitoT,/home/lamj2/scr/mic_YY1_midg1/final_map/Y7_4h_midg1_rep0to3.mcool,/home/lamj2/scr/mic_YY1_midg1/final_map/Y7_4h_midg1_rep0to3_10k_expected-cis.tsv
