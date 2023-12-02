@@ -1,4 +1,4 @@
-# Code for Lam et al., 2024)
+# Code for Lam et al., 2024
 
 # Set up python environment
 The `spec-file.txt` file can be used with conda to install the software required to run the loop quantification script on a Linux platform.
@@ -31,5 +31,27 @@ e.g.,
 
 # Input files
 
+.mcool files and loop lists deposited on GEO can be used as input for this script. Expected files can be generated from the .mcool files at the desired resolution using cooltools expected-cis (default settings).
 
-.mcool files deposited on GEO can be used as input for this script.
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247254
+
+# Output
+
+Loop strengths will be saved in a new csv file named "[config]_ooe_table.csv". This will have the original loop list columns plus the following additional columns containing loop quantifications:
+
+* peak_obs_[name]: observed contacts for the loop
+* peak_obs_[name]: observed/expected contacts for the loop
+* peak_ooe_donut_[name]: "loop strength" (observed/expected_local) for the loop
+
+The loop strength (observed / local-adjusted expected) metric was originally defined in Rao et al., 2014:
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5635824/figure/F3/
+
+For our quantification, we calculated the local-adjusted expected based on a "rounded donut" as defined and depicted in the cooltools documentation:
+
+https://cooltools.readthedocs.io/en/latest/notebooks/dots.html#Calling-dots-with-a-%22rounded-donut%22-kernel
+
+
+
+
+
