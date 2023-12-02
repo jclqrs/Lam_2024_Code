@@ -43,7 +43,7 @@ Loop strengths will be saved in a new csv file named "[config]_ooe_table.csv". T
 * peak_obs_[name]: observed/expected contacts for the loop
 * peak_ooe_donut_[name]: "loop strength" (observed/expected_local) for the loop
 
-The loop strength (observed / local-adjusted expected) metric was originally defined in Rao et al., 2014:
+The metric we call "loop strength" (observed / local-adjusted expected) was originally defined in Rao et al., 2014:
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5635824/figure/F3/
 
