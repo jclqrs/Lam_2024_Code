@@ -12,19 +12,25 @@ https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247254
 
 # Generate contact maps with distiller
 1) Download distiller pipeline files
+
 `nextflow clone mirnylab/distiller-nf .`
+
 2) Add sample names and corresponding datafiles to project.yml. An example with the settings we used is provided.
 3) Make appropriate changes to the config files. Our config files are located in the distiller_files directory.
 4) Run the pipeline
+
 `sh run_distiller.sh`
 
 # Generate contact versus distance curves
-Also known as P(s) curve. This script plots the log-binned decay of interactions with genomic distance. 
+Also known as P(s) curve. This script plots the log-binned decay of interactions with genomic distance.
+
 `python logbin_contact_v_distance.py -i MCOOL_DIR -o OUTFILE.PDF`
+
 MCOOL_DIR is the path to a directory that contains multiple .mcool files to be analyzed. 
 
 # Generating loop calls
 Generate expected values and call loops at 5k and 10k resolution. Instead of classic local neighborhoods, we used a 'rounded donut' and round lower left (allows for more loop calls near the diagonal). 
+
 `call_dot_rounddonut.sh -m MCOOL`
 
 # Quantify loop strength across multiple heatmaps
@@ -66,7 +72,13 @@ https://cooltools.readthedocs.io/en/latest/notebooks/dots.html#Calling-dots-with
 # Call domains with rGMAP
 `sh call_domains.sh -m CONTACTMAP.mcool`
 
+The first step is creating a new file that is compatible with rGMAP. The second step runs rGMAP in two iterations, one optimized for TADs and one for smaller TADs / subTADs. This script runs on 10kb resolution heatmaps. The resolution is hard-coded in the script, so change it manually if you want to try a different resolution. Note: this uses 8 cores by default. 
 
+# Create merged/filtered domain and boundary lists
+`sh combine_domain_lists.sh -m CONTACTMAP1.mcool -e EXPECTED1.tsv -t CONTACTMAP1_domains -n CONTACTMAP2.mcool -f EXPECTED2.tsv -u CONTACTMAP2_domains`
+
+The previous step should have made a directory containing the TAD calls (should be labeled "CONTACTMAP_domains") 
+Given 2 conditions (e.g. untreated and auxin), use this script to make a list of boundaries, domains, and insulation scores for each condition. It will also create a merged list of boundaries from both conditions.
 
 
 
