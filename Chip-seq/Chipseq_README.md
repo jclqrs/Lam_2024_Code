@@ -7,6 +7,20 @@ The `spec-file.txt` file can be used with conda to install the software required
 
 For other platforms, you can manually install the packages listed in the file (and in the Methods section). Importantly, the loop quantification script uses cooltools version 0.5.1. 
 
+# Generate contact maps with distiller
+create a new empty directory for your experiment. enter that folder.
+1) download distiller pipeline files
+2) nextflow clone mirnylab/distiller-nf  .
+
+add sample names and corresponding datafiles to project.yml
+copy 4 files over to distiller pipeline directory to replace the default versions.These config files have been modified to work on the CHOP cluster. Modify file locations as needed.
+project.yml
+configs/cluster.config
+nextflow.config 
+run_distiller.sh
+run the pipeline
+
+
 # Create a config file
 First, create a csv file detailing the heatmaps that should be quantified. It should have a header row with three columns: name, map, expected.
 

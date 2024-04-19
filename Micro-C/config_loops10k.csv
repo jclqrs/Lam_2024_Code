@@ -1,0 +1,3 @@
+﻿name,map,expected
+untreated,GSE247254_YY1aid_async_untreated.mcool,GSE247254_YY1aid_async_untreated_10k_expected-cis.tsv
+auxin,GSE247254_YY1aid_async_auxin.mcool,GSE247254_YY1aid_async_auxin_10k_expected-cis.tsv
