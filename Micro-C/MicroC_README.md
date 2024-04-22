@@ -1,6 +1,6 @@
 # Walkthrough of Micro-C analysis 
 # Set up python environment
-The `spec-file.txt` file can be used with conda to install the software required to run the loop quantification script on a Linux platform.
+The `env/py38.yml` file can be used with conda to install the software required to run the loop quantification script on a Linux platform.
 
 `conda create --name <env> --file <this file>`
 
