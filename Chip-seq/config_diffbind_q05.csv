@@ -1,0 +1,5 @@
+SampleID,Factor,Condition,Replicate,bamReads,Peaks
+Y7_None_RAD21_Rep1,RAD21,None,1,./bam/Y7_None_RAD21_Rep1_filtered.bam,macs2results/Y7_None_RAD21_Rep1_q05_peaks.narrowPeak
+Y7_Auxin_RAD21_Rep1,RAD21,Auxin,1,./bam/Y7_Auxin_RAD21_Rep1_filtered.bam,macs2results/Y7_Auxin_RAD21_Rep1_q05_peaks.narrowPeak
+Y7_None_RAD21_Rep2,RAD21,None,2,./bam/Y7_None_RAD21_Rep2_filtered.bam,macs2results/Y7_None_RAD21_Rep2_q05_peaks.narrowPeak
+Y7_Auxin_RAD21_Rep2,RAD21,Auxin,2,./bam/Y7_Auxin_RAD21_Rep2_filtered.bam,macs2results/Y7_Auxin_RAD21_Rep2_q05_peaks.narrowPeak
