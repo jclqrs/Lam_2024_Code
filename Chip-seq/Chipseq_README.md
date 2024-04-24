@@ -1,12 +1,5 @@
 # Walkthrough for ChIP-seq analysis
 
-# Set up python environment
-The `spec-file.txt` file can be used with conda to install the software required to run the loop quantification script on a Linux platform.
-
-`conda create --name <env> --file <this file>`
-
-For other platforms, you can manually install the packages listed in the file (and in the Methods section). Importantly, the loop quantification script uses cooltools version 0.5.1. 
-
 # ChIP-seq pipeline
 `sbatch chip_pipeline_2.sh -c CONFIG.csv`
 
