@@ -6,6 +6,6 @@ Gene-level counts were calculated with htseq for both sample and spike-in alignm
 `sbatch run_htseqcount_samples.sh`
 
 # Differential analysis with DESeq2
-Differential gene expression analysis was performed wiht DESeq2. An example jupyter notebook is provided:
+Differential gene expression analysis was performed with DESeq2. An example jupyter notebook is provided:
 
 `DESeq2_ttseq_spikein.ipynb`
