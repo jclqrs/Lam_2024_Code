@@ -1,0 +1,23 @@
+name: salmon
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=2_gnu
+  - bzip2=1.0.8=hd590300_5
+  - icu=58.2=hf484d3e_1000
+  - jemalloc=5.3.0=hcb278e6_0
+  - libboost=1.73.0=h28710b8_12
+  - libgcc-ng=13.2.0=h807b86a_3
+  - libgomp=13.2.0=h807b86a_3
+  - libjemalloc=5.3.0=hcb278e6_0
+  - libstdcxx-ng=13.2.0=h7e041cc_3
+  - libzlib=1.2.13=hd590300_5
+  - salmon=0.13.1=h86b0361_0
+  - tbb=2020.2=h4bd325d_4
+  - xz=5.2.6=h166bdaf_0
+  - zlib=1.2.13=hd590300_5
+  - zstd=1.5.5=hfc55251_0
+prefix: /home/lamj2/miniconda3/envs/salmon
