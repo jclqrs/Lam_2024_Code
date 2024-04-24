@@ -1,11 +1,11 @@
-# RNA-seq analysis
+# TT-seq analysis
 
-# Align reads with salmon
-Transcript quantification was performed with salmon. An example bash script with the alignment parameters is provided:
+# Calculate gene-level counts with htseq
+Gene-level counts were calculated with htseq for both sample and spike-in alignments. An example bash script with the alignment parameters is provided:
 
-`sbatch run_salmon.sh`
+`sbatch run_htseqcount_samples.sh`
 
 # Differential analysis with DESeq2
 Differential gene expression analysis was performed wiht DESeq2. An example jupyter notebook is provided:
 
-`RNAseq_DESeq2_example_YY1AID_timecourse.ipynb`
+`DESeq2_ttseq_spikein.ipynb`
