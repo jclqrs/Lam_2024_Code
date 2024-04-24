@@ -1,7 +1,7 @@
 # TT-seq analysis
 
 # Calculate gene-level counts with htseq
-Gene-level counts were calculated with htseq for both sample and spike-in alignments. An example bash script with the alignment parameters is provided:
+Gene-level counts were calculated with htseq for both sample and spike-in alignments. An example bash script is provided:
 
 `sbatch run_htseqcount_samples.sh`
 
